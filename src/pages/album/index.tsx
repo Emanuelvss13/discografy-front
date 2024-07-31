@@ -35,6 +35,9 @@ export default function Album() {
         ...album!,
         tracks: [...album!.tracks, response.data.track ]
       }))
+
+      setTrackName('')
+      setTrackDuration('')
     })
   }
 
@@ -46,7 +49,13 @@ export default function Album() {
 
   async function handleDeleteTrack(id: number) {
     await Axios.delete(`/track?id=${id}`).then(() => {
-      navigate(`/album/${albumId}`)
+      const newTracks = album!.tracks.filter(track => track.id !== id  )
+
+
+      setAlbum(album => ({
+        ...album!,
+        tracks: [...newTracks ]
+      }))
     })
   }
 
