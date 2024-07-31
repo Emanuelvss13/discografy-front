@@ -1,0 +1,29 @@
+.Album-Actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid cadetblue;
+  margin-bottom: 2rem;
+}
+
+.Tracks {
+  width: 100%;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.Create-Track-Container {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid cadetblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.Create-Track-Container input {
+  font-size: 1.25rem;
+}
