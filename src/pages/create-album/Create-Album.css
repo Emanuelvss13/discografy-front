@@ -1,0 +1,21 @@
+.Create-Album-Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Create-Album-Container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Create-Album-Container form input {
+  font-size: 1rem;
+  width: 60%;
+  padding: 1rem;
+}
+
+.Create-Album-Container form button {
+  margin-top: 2rem;
+}
